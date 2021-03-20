@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #272727;
+}
+
+/*section*/
+
+section {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 20%), 0px 0px 50px rgb(0 0 0 / 20%);
+}
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #63f77c;
+    transition: all 0.75s ease-out;
+}
+
+.btn-case {
+    width: 20%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+form input {
+    padding: 20px 35px;
+    outline: none;
+    border-radius: 35px;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    border: 2px solid #6435ef;
+    transition: all 0.75s ease-out;
+}
+form input::placeholder {
+    color: #6435ef;
+    font-weight: 700;
+    transition: all 0.75s ease-out;
+}
+form input:focus {
+    transform: translateZ(25px) !important;
+    box-shadow: none !important;
+    background: #6435ef;
+    color: white;
+    border: 2px solid transparent;
+}
+
+input::placeholder:focus {
+    color: white;
+}
+
+form input[type = 'submit'] {
+    transform-style: preserve-3d;
+    padding: 15px 0px;
+    border-radius: 35px;
+    background: transparent;
+    color: #63f77c;
+    font-weight: 700;
+    border: 2px solid;
+    cursor: pointer;
+    text-shadow: 0 20px 20px rgb(0 0 0 / 20%);
+    margin-top: 20px;
+}
+
+form input[type = 'submit']:hover {
+    background: #6435ef;
+    color: white;
+    border: 1px solid transparent;
+}
+
+form input[type = 'submit']:focus {
+    background: #6435ef;
+    color: white;
+    border: 2px solid transparent;
+}
